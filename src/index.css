@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .dashboard-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .dashboard-card-content {
+    @apply flex items-center p-6;
+  }
+
+  .dashboard-card-icon {
+    @apply rounded-full p-3 mr-4;
+  }
+
+  .dashboard-card-text {
+    @apply flex flex-col;
+  }
+
+  .dashboard-card-label {
+    @apply text-sm font-medium text-gray-500;
+  }
+
+  .dashboard-card-value {
+    @apply text-2xl font-semibold text-gray-800;
+  }
+}
